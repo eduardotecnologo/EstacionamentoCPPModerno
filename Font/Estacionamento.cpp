@@ -5,8 +5,12 @@
 #include <tchar.h>
 //---------------------------------------------------------------------------
 USEFORM("UFrmPrincipal.cpp", FrmPrincipal);
-USEFORM("UFrmModelocadastoCRUD.cpp", FrmModelocadastoCRUD);
+USEFORM("UFrmModelocadastroCRUD.cpp", FrmModelocadastroCRUD);
 USEFORM("UFrmCadastroCondutor.cpp", FrmCadastoCondutor);
+USEFORM("UFrmCadastroMontadora.cpp", FrmCadastoMontadora);
+USEFORM("UFrmCadastroModelo.cpp", FrmCadastoModelo);
+USEFORM("UFrmCadastroTipo.cpp", FrmCadastroTipo);
+USEFORM("UFrmCadastroVeiculo.cpp", FrmCadastoVeiculo);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
