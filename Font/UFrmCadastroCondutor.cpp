@@ -6,12 +6,12 @@
 #include "UFrmCadastroCondutor.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
-#pragma link "UFrmModelocadastoCRUD"
+#pragma link "UFRMMODELOCADASTROCRUD"
 #pragma resource "*.dfm"
 TFrmCadastoCondutor *FrmCadastoCondutor;
 //---------------------------------------------------------------------------
 __fastcall TFrmCadastoCondutor::TFrmCadastoCondutor(TComponent* Owner)
-	: TFrmModelocadastoCRUD(Owner)
+	: TFrmModelocadastroCRUD(Owner)
 {
 }
 //---------------------------------------------------------------------------

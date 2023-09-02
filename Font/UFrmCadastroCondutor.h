@@ -7,9 +7,11 @@
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
-#include "UFrmModelocadastoCRUD.h"
+#include "UFrmModelocadastroCRUD.h"
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ToolWin.hpp>
 //---------------------------------------------------------------------------
-class TFrmCadastoCondutor : public TFrmModelocadastoCRUD
+class TFrmCadastoCondutor : public TFrmModelocadastroCRUD
 {
 __published:	// IDE-managed Components
 private:	// User declarations

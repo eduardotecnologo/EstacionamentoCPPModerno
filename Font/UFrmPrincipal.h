@@ -8,6 +8,8 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.Menus.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
 //---------------------------------------------------------------------------
 class TFrmPrincipal : public TForm
 {
@@ -28,8 +30,14 @@ __published:	// IDE-managed Components
 	TMenuItem *icket1;
 	TMenuItem *Veculo3;
 	TMenuItem *Permanencia1;
+	TImage *Image1;
+	TImage *Image2;
 	void __fastcall EvSairSistemaClick(TObject *Sender);
 	void __fastcall EvAbrirCadatroCondutorClick(TObject *Sender);
+	void __fastcall EvAbrirCadastroMontadoraClick(TObject *Sender);
+	void __fastcall EvAbrirCadastroModeloClick(TObject *Sender);
+	void __fastcall EvAbrirCadastroVeiculoClick(TObject *Sender);
+	void __fastcall EvAbrirCadastroTipoClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmPrincipal(TComponent* Owner);
