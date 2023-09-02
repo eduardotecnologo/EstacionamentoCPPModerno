@@ -130,6 +130,18 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="UFrmCadastroCondutor.cpp">
+            <Form>FrmCadastoCondutor</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>UFrmCadastroCondutor.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="UFrmModelocadastoCRUD.cpp">
+            <Form>FrmModelocadastoCRUD</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>UFrmModelocadastoCRUD.h</DependentOn>
+            <BuildOrder>3</BuildOrder>
+        </CppCompile>
         <CppCompile Include="UFrmPrincipal.cpp">
             <Form>FrmPrincipal</Form>
             <FormType>dfm</FormType>
@@ -137,6 +149,8 @@
             <BuildOrder>2</BuildOrder>
         </CppCompile>
         <FormResources Include="UFrmPrincipal.dfm"/>
+        <FormResources Include="UFrmModelocadastoCRUD.dfm"/>
+        <FormResources Include="UFrmCadastroCondutor.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

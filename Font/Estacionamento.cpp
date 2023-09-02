@@ -5,6 +5,8 @@
 #include <tchar.h>
 //---------------------------------------------------------------------------
 USEFORM("UFrmPrincipal.cpp", FrmPrincipal);
+USEFORM("UFrmModelocadastoCRUD.cpp", FrmModelocadastoCRUD);
+USEFORM("UFrmCadastroCondutor.cpp", FrmCadastoCondutor);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
