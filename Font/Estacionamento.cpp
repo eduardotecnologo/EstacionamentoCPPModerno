@@ -11,6 +11,7 @@ USEFORM("UFrmCadastroMontadora.cpp", FrmCadastoMontadora);
 USEFORM("UFrmCadastroModelo.cpp", FrmCadastoModelo);
 USEFORM("UFrmCadastroTipo.cpp", FrmCadastroTipo);
 USEFORM("UFrmCadastroVeiculo.cpp", FrmCadastoVeiculo);
+USEFORM("UFrmCadastroTicket.cpp", FrmCadastroTicket);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {

@@ -3,20 +3,15 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "UFrmPrincipal.h"
+#include "UFrmCadastroTicket.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
+#pragma link "UFrmModelocadastroCRUD"
 #pragma resource "*.dfm"
-TFrmPrincipal *FrmPrincipal;
+TFrmCadastroTicket *FrmCadastroTicket;
 //---------------------------------------------------------------------------
-__fastcall TFrmPrincipal::TFrmPrincipal(TComponent* Owner)
-	: TForm(Owner)
+__fastcall TFrmCadastroTicket::TFrmCadastroTicket(TComponent* Owner)
+	: TFrmModelocadastroCRUD(Owner)
 {
 }
-
-void __fastcall TFrmPrincipal::EvSairSistemaClick(TObject *Sender)
-{
-	Close();
-}
 //---------------------------------------------------------------------------
-
