@@ -7180,6 +7180,7 @@ object FrmPrincipal: TFrmPrincipal
       Caption = 'Processo'
       object icket1: TMenuItem
         Caption = 'Ticket...'
+        OnClick = EvAbrirCadastroTicketClick
       end
     end
     object Relatrio1: TMenuItem

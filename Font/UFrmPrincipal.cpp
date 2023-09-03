@@ -9,6 +9,7 @@
 #include "UFrmCadastroMontadora.h"
 #include "UFrmCadastroTipo.h"
 #include "UFrmCadastroVeiculo.h"
+#include "UFrmCadastroTicket.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -52,6 +53,12 @@ void __fastcall TFrmPrincipal::EvAbrirCadastroVeiculoClick(TObject *Sender)
 void __fastcall TFrmPrincipal::EvAbrirCadastroTipoClick(TObject *Sender)
 {
 	new TFrmCadastroTipo(this);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::EvAbrirCadastroTicketClick(TObject *Sender)
+{
+    new TFrmCadastroTicket(this);
 }
 //---------------------------------------------------------------------------
 

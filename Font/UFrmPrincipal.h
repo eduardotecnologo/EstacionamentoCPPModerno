@@ -38,6 +38,7 @@ __published:	// IDE-managed Components
 	void __fastcall EvAbrirCadastroModeloClick(TObject *Sender);
 	void __fastcall EvAbrirCadastroVeiculoClick(TObject *Sender);
 	void __fastcall EvAbrirCadastroTipoClick(TObject *Sender);
+	void __fastcall EvAbrirCadastroTicketClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmPrincipal(TComponent* Owner);

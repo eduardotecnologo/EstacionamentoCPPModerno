@@ -1,36 +1,30 @@
 //---------------------------------------------------------------------------
 
-#ifndef UFrmPrincipalH
-#define UFrmPrincipalH
+#ifndef UFrmCadastroTicketH
+#define UFrmCadastroTicketH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
-#include <Vcl.Menus.hpp>
+#include "UFrmModelocadastroCRUD.h"
+#include <System.ImageList.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ImgList.hpp>
+#include <Vcl.ToolWin.hpp>
+#include <Data.DB.hpp>
+#include <System.Actions.hpp>
+#include <Vcl.ActnList.hpp>
+#include <Vcl.DBActns.hpp>
 //---------------------------------------------------------------------------
-class TFrmPrincipal : public TForm
+class TFrmCadastroTicket : public TFrmModelocadastroCRUD
 {
 __published:	// IDE-managed Components
-	TMainMenu *mnmPrincipal;
-	TMenuItem *Cadastro1;
-	TMenuItem *Cadastro2;
-	TMenuItem *Relatrio1;
-	TMenuItem *Sair1;
-	TMenuItem *Condutor1;
-	TMenuItem *Condutor2;
-	TMenuItem *Modelo1;
-	TMenuItem *Modelo2;
-	TMenuItem *Veculo1;
-	TMenuItem *Veculo2;
-	TMenuItem *N1;
-	TMenuItem *N2;
-	void __fastcall EvSairSistemaClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TFrmPrincipal(TComponent* Owner);
+	__fastcall TFrmCadastroTicket(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TFrmPrincipal *FrmPrincipal;
+extern PACKAGE TFrmCadastroTicket *FrmCadastroTicket;
 //---------------------------------------------------------------------------
 #endif
