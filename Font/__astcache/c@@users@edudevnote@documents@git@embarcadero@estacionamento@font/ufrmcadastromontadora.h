@@ -16,10 +16,19 @@
 #include <Vcl.ActnList.hpp>
 #include <Vcl.DBActns.hpp>
 #include <Vcl.ImgList.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Mask.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastoMontadora : public TFrmModelocadastroCRUD
 {
 __published:	// IDE-managed Components
+	TLabel *Label1;
+	TDBEdit *DBEditCodigo;
+	TLabel *Label2;
+	TDBEdit *DBEditNome;
+	TToolButton *ToolButton7;
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastoMontadora(TComponent* Owner);

@@ -56,8 +56,6 @@ __published:	// IDE-managed Components
 	TDataSetCancel *actCancelar;
 	TAction *actPesquisar;
 	TAction *actFechar;
-	TFDConnection *EstacionamentoConnection;
-	TFDPhysPgDriverLink *FDPhysPgDriverLink1;
 	void __fastcall EvFecharFormularioClose(TObject *Sender, TCloseAction &Action);
 	void __fastcall EvSairFormularioClick(TObject *Sender);
 

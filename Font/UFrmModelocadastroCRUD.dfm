@@ -5323,22 +5323,4 @@ object FrmModelocadastroCRUD: TFrmModelocadastroCRUD
       OnExecute = EvSairFormularioClick
     end
   end
-  object EstacionamentoConnection: TFDConnection
-    Params.Strings = (
-      'Server=127.0.0.1'
-      'Database=estacionamento'
-      'User_Name=postgres'
-      'Password=root'
-      'Port=5433'
-      'DriverID=PG')
-    Connected = True
-    LoginPrompt = False
-    Left = 363
-    Top = 28
-  end
-  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
-    VendorLib = 'C:\Program Files (x86)\psqlODBC\1500\bin\libpq.dll'
-    Left = 360
-    Top = 96
-  end
 end

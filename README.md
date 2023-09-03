@@ -8,10 +8,11 @@ link: <https://www.youtube.com/watch?v=uOW-RLJCNQE&list=PLr5fNRPNxagzKe8oadxLiLd
 - Sonar Qube Development
 
 ## Conection Postgress
+
 link: <https://www.postgresql.org/ftp/odbc/versions/msi/>
 
 - FDConection
-- FDPhysPgDriverLink1
+- FDPhysPgDriverLink1 (ADD C:\Program Files (x86)\psqlODBC\1500\bin\libpq.dll in Vendor LIB)
 
 ## Colors Buttons
 
