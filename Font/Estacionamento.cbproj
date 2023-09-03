@@ -130,6 +130,13 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="UDtmEstacionamento.cpp">
+            <Form>dtmEstacionamento</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+            <DependentOn>UDtmEstacionamento.h</DependentOn>
+            <BuildOrder>10</BuildOrder>
+        </CppCompile>
         <CppCompile Include="UFrmCadastroCondutor.cpp">
             <Form>FrmCadastoCondutor</Form>
             <FormType>dfm</FormType>
@@ -178,14 +185,15 @@
             <DependentOn>UFrmPrincipal.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
-        <FormResources Include="UFrmPrincipal.dfm"/>
-        <FormResources Include="UFrmModelocadastroCRUD.dfm"/>
-        <FormResources Include="UFrmCadastroCondutor.dfm"/>
-        <FormResources Include="UFrmCadastroMontadora.dfm"/>
-        <FormResources Include="UFrmCadastroModelo.dfm"/>
+        <FormResources Include="UFrmCadastroTicket.dfm"/>
         <FormResources Include="UFrmCadastroTipo.dfm"/>
         <FormResources Include="UFrmCadastroVeiculo.dfm"/>
-        <FormResources Include="UFrmCadastroTicket.dfm"/>
+        <FormResources Include="UFrmModelocadastroCRUD.dfm"/>
+        <FormResources Include="UFrmPrincipal.dfm"/>
+        <FormResources Include="UFrmCadastroCondutor.dfm"/>
+        <FormResources Include="UFrmCadastroModelo.dfm"/>
+        <FormResources Include="UFrmCadastroMontadora.dfm"/>
+        <FormResources Include="UDtmEstacionamento.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

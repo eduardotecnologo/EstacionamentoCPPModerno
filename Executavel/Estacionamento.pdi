@@ -1,3 +1,10 @@
+FireDACPgDriver280.bpl
+vclx280.bpl
+xmlrtl280.bpl
+FireDACCommon280.bpl
+FireDACCommonDriver280.bpl
+FireDAC280.bpl
+vclFireDAC280.bpl
 bindengine280.bpl
 vclwinx280.bpl
 vcldb280.bpl
