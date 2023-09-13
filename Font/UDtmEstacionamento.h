@@ -34,6 +34,9 @@ __published:	// IDE-managed Components
 	TFDGUIxWaitCursor *WaitCursor;
 	TIntegerField *qryMontadoramon_cod;
 	TStringField *qryMontadoramon_nom;
+	TFDQuery *qryTipo;
+	TIntegerField *qryTipotip_cod;
+	TStringField *qryTipotip_des;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);

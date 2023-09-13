@@ -1,11 +1,11 @@
 inherited FrmCadastoMontadora: TFrmCadastoMontadora
   Caption = 'Cadastro de Montadora'
-  ClientHeight = 373
+  ClientHeight = 318
   ClientWidth = 1068
   ExplicitLeft = 3
   ExplicitTop = 3
   ExplicitWidth = 1080
-  ExplicitHeight = 411
+  ExplicitHeight = 356
   TextHeight = 15
   object Label1: TLabel [0]
     Left = 32
@@ -49,8 +49,11 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     ParentFont = False
   end
   inherited tlbCadastroCRUD: TToolBar
-    Top = 312
+    Top = 257
     Width = 1068
+    TabOrder = 2
+    ExplicitTop = 303
+    ExplicitWidth = 1062
     inherited ToolButton5: TToolButton
       Width = 416
       ExplicitWidth = 416
@@ -70,7 +73,7 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
   end
   object DBEditCodigo: TDBEdit [4]
     Left = 114
-    Top = 101
+    Top = 96
     Width = 231
     Height = 36
     DataField = 'mon_cod'
@@ -81,7 +84,7 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
   end
   object DBEditNome: TDBEdit [5]
     Left = 114
@@ -96,7 +99,7 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 1
   end
   inherited ImgListAtiva: TImageList
     Left = 800
