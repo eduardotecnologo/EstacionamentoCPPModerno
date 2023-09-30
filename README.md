@@ -49,5 +49,9 @@ link: <https://www.postgresql.org/ftp/odbc/versions/msi/>
 
  docker inspect my-network
 
- docker run --name my-pgadmin --network=my-network -p 15432:80 -e PGADMIN_DEFAULT_EMAIL=dudu@gmail.com -e PGADMIN_DEFAULT_PASSWORD=p ostgres -d dpage/pgadmin4
+ docker run --name my-pgadmin --network=my-network -p 15432:80 -e PGADMIN_DEFAULT_EMAIL=dudu@gmail.com -e PGADMIN_DEFAULT_PASSWORD=postgres -d dpage/pgadmin4
  docker ps
+
+ docker exec -it meu_container /bin/bash
+ docker-compose up
+ docker-compose down -v

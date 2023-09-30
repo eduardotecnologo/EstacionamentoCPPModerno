@@ -1,9 +1,11 @@
-//---------------------------------------------------------------------------
+﻿//---------------------------------------------------------------------------
 
 #include <vcl.h>
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
+#include <Vcl.Styles.hpp>
+#include <Vcl.Themes.hpp>
 USEFORM("UFrmCadastroTicket.cpp", FrmCadastroTicket);
 USEFORM("UFrmCadastroTipo.cpp", FrmCadastroTipo);
 USEFORM("UFrmCadastroVeiculo.cpp", FrmCadastoVeiculo);

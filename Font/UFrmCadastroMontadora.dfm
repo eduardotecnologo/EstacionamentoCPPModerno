@@ -2,8 +2,6 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
   Caption = 'Cadastro de Montadora'
   ClientHeight = 318
   ClientWidth = 1068
-  ExplicitLeft = 3
-  ExplicitTop = 3
   ExplicitWidth = 1080
   ExplicitHeight = 356
   TextHeight = 15
@@ -36,11 +34,11 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     ParentFont = False
   end
   object Label3: TLabel [2]
-    Left = 840
+    Left = 920
     Top = 144
-    Width = 154
+    Width = 61
     Height = 28
-    Caption = 'Colocar uma Lista'
+    Caption = 'ListBox'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -20
@@ -52,7 +50,7 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     Top = 257
     Width = 1068
     TabOrder = 2
-    ExplicitTop = 303
+    ExplicitTop = 248
     ExplicitWidth = 1062
     inherited ToolButton5: TToolButton
       Width = 416

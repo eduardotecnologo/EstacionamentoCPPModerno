@@ -27,6 +27,7 @@ __published:	// IDE-managed Components
 	TLabel *Label2;
 	TDBEdit *dbEditCodigo;
 	TDBEdit *dbEditDescricao;
+	TLabel *Label3;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroTipo(TComponent* Owner);
