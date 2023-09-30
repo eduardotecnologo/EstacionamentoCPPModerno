@@ -22,7 +22,7 @@ object dtmEstacionamento: TdtmEstacionamento
     SQL.Strings = (
       'SELECT MON_COD, MON_NOM '
       '       FROM MONTADORA ')
-    Left = 272
+    Left = 273
     Top = 16
     object qryMontadoramon_cod: TIntegerField
       DisplayLabel = 'C'#243'digo'
@@ -51,7 +51,7 @@ object dtmEstacionamento: TdtmEstacionamento
     SQL.Strings = (
       'SELECT TIP_COD,TIP_DES '
       '      FROM TIPO; ')
-    Left = 272
+    Left = 273
     Top = 96
     object qryTipotip_cod: TIntegerField
       DisplayLabel = 'C'#243'digo'
@@ -78,7 +78,7 @@ object dtmEstacionamento: TdtmEstacionamento
       '       CON_CNH,'
       '       CON_CPF'
       '     FROM CONDUTOR;')
-    Left = 272
+    Left = 273
     Top = 184
     object qryCondutorcon_cod: TIntegerField
       DisplayLabel = 'C'#243'digo'
@@ -116,8 +116,8 @@ object dtmEstacionamento: TdtmEstacionamento
     Connection = EstacionamentoConnection
     SQL.Strings = (
       'SELECT MOD_COD, MON_COD, MOD_NOM FROM MODELO')
-    Left = 272
-    Top = 272
+    Left = 273
+    Top = 273
     object qryModelomod_cod: TIntegerField
       DisplayLabel = 'C'#243'digo'
       DisplayWidth = 5
@@ -151,8 +151,8 @@ object dtmEstacionamento: TdtmEstacionamento
       '       VEI_PLA,'
       '       VEI_ANO_FAB'
       '   FROM VEICULO')
-    Left = 272
-    Top = 352
+    Left = 273
+    Top = 353
     object qryVeiculovei_cod: TIntegerField
       DisplayLabel = '&C'#243'digo'
       DisplayWidth = 5
@@ -192,5 +192,116 @@ object dtmEstacionamento: TdtmEstacionamento
       FieldName = 'vei_ano_fab'
       Origin = 'vei_ano_fab'
     end
+  end
+  object qryConducao: TFDQuery
+    Active = True
+    Connection = EstacionamentoConnection
+    SQL.Strings = (
+      'SELECT CND_COD,'
+      '       CON_COD,'
+      '       VEI_COD'
+      '       FROM CONDUCAO;')
+    Left = 897
+    Top = 8
+    object qryConducaocnd_cod: TIntegerField
+      DisplayLabel = '&C'#243'digo'
+      DisplayWidth = 5
+      FieldName = 'cnd_cod'
+      Origin = 'CND_COD'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      MaxValue = 5000
+      MinValue = 1
+    end
+    object qryConducaocon_cod: TIntegerField
+      DisplayLabel = 'Cod. &Condutor'
+      DisplayWidth = 5
+      FieldName = 'CON_COD'
+      Origin = 'con_cod'
+    end
+    object qryConducaovei_cod: TIntegerField
+      DisplayLabel = 'C'#243'd. Ve'#237'culo'
+      DisplayWidth = 5
+      FieldName = 'vei_cod'
+      Origin = 'vei_cod'
+    end
+  end
+  object qryTicket: TFDQuery
+    Active = True
+    MasterSource = dtsConducaoTicketMD
+    MasterFields = 'cnd_cod'
+    DetailFields = 'cnd_cod'
+    Connection = EstacionamentoConnection
+    FetchOptions.AssignedValues = [evCache]
+    FetchOptions.Cache = [fiBlobs, fiMeta]
+    SQL.Strings = (
+      'SELECT tic_num, '
+      '       cnd_cod, '
+      '       tic_dat, '
+      '       tic_hor_ent, '
+      '       tic_hor_sai, '
+      '       tic_val_pag'
+      'FROM ticket'
+      'WHERE CND_COD = :CND_COD;')
+    Left = 897
+    Top = 152
+    ParamData = <
+      item
+        Name = 'CND_COD'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+    object qryTickettic_num: TIntegerField
+      DisplayLabel = 'N'#250'mero'
+      DisplayWidth = 10
+      FieldName = 'tic_num'
+      Origin = 'tic_num'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      MaxValue = 5000
+      MinValue = 1
+    end
+    object qryTicketcnd_cod: TIntegerField
+      DisplayLabel = 'C'#243'd. Condu'#231#227'o'
+      DisplayWidth = 16
+      FieldName = 'cnd_cod'
+      Origin = 'cnd_cod'
+    end
+    object qryTickettic_dat: TSQLTimeStampField
+      DisplayLabel = 'Data Entrada'
+      DisplayWidth = 10
+      FieldName = 'tic_dat'
+      Origin = 'tic_dat'
+      ProviderFlags = [pfInUpdate]
+      EditMask = '!99/99/0000;1;_'
+    end
+    object qryTickettic_hor_ent: TSQLTimeStampField
+      DisplayLabel = 'Hora Entrada'
+      DisplayWidth = 16
+      FieldName = 'tic_hor_ent'
+      Origin = 'tic_hor_ent'
+      ProviderFlags = [pfInUpdate]
+      EditMask = '00:00;1;_'
+    end
+    object qryTickettic_hor_sai: TSQLTimeStampField
+      DisplayLabel = 'Hora Sa'#237'da'
+      DisplayWidth = 19
+      FieldName = 'tic_hor_sai'
+      Origin = 'tic_hor_sai'
+      ProviderFlags = [pfInUpdate]
+      EditMask = '00:00;1;_'
+    end
+    object qryTickettic_val_pag: TBCDField
+      DisplayLabel = 'Valor Pago'
+      DisplayWidth = 16
+      FieldName = 'tic_val_pag'
+      Origin = 'tic_val_pag'
+      currency = True
+      Precision = 15
+    end
+  end
+  object dtsConducaoTicketMD: TDataSource
+    DataSet = qryConducao
+    Left = 897
+    Top = 80
   end
 end

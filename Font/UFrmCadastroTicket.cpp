@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "UFrmCadastroTicket.h"
+#include "UDtmEstacionamento.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "UFrmModelocadastroCRUD"

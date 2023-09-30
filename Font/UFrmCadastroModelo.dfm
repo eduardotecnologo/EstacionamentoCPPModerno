@@ -1,11 +1,11 @@
 inherited FrmCadastoModelo: TFrmCadastoModelo
   Caption = 'Cadastro de Modelo'
-  ClientHeight = 304
+  ClientHeight = 323
   ClientWidth = 1059
   ExplicitLeft = 3
   ExplicitTop = 3
   ExplicitWidth = 1071
-  ExplicitHeight = 342
+  ExplicitHeight = 361
   TextHeight = 15
   object Label1: TLabel [0]
     Left = 119
@@ -50,7 +50,7 @@ inherited FrmCadastoModelo: TFrmCadastoModelo
     ParentFont = False
   end
   inherited tlbCadastroCRUD: TToolBar
-    Top = 243
+    Top = 262
     Width = 1059
     TabOrder = 4
     ExplicitTop = 253

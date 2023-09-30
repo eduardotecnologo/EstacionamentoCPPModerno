@@ -53,6 +53,18 @@ __published:	// IDE-managed Components
 	TIntegerField *qryVeiculotip_cod;
 	TStringField *qryVeiculovei_pla;
 	TIntegerField *qryVeiculovei_ano_fab;
+	TFDQuery *qryConducao;
+	TIntegerField *qryConducaocnd_cod;
+	TIntegerField *qryConducaocon_cod;
+	TIntegerField *qryConducaovei_cod;
+	TFDQuery *qryTicket;
+	TIntegerField *qryTickettic_num;
+	TIntegerField *qryTicketcnd_cod;
+	TSQLTimeStampField *qryTickettic_dat;
+	TSQLTimeStampField *qryTickettic_hor_ent;
+	TSQLTimeStampField *qryTickettic_hor_sai;
+	TBCDField *qryTickettic_val_pag;
+	TDataSource *dtsConducaoTicketMD;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);

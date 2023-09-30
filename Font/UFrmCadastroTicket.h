@@ -16,10 +16,16 @@
 #include <System.Actions.hpp>
 #include <Vcl.ActnList.hpp>
 #include <Vcl.DBActns.hpp>
+#include <Vcl.DBGrids.hpp>
+#include <Vcl.Grids.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroTicket : public TFrmModelocadastroCRUD
 {
 __published:	// IDE-managed Components
+	TGroupBox *grbConducao;
+	TGroupBox *grbTicket;
+	TDataSource *dtsTicket;
+	TDBGrid *DBGrid1;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroTicket(TComponent* Owner);

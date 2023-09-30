@@ -67,8 +67,8 @@ inherited FrmCadastoCondutor: TFrmCadastoCondutor
     Top = 307
     Width = 1042
     TabOrder = 4
-    ExplicitTop = 486
-    ExplicitWidth = 1178
+    ExplicitTop = 298
+    ExplicitWidth = 1036
     inherited ToolButton5: TToolButton
       Width = 400
       ExplicitWidth = 400

@@ -1,12 +1,10 @@
 inherited FrmCadastoVeiculo: TFrmCadastoVeiculo
   ParentCustomHint = False
   Caption = 'Cadastro de Ve'#237'culo'
-  ClientHeight = 353
-  ClientWidth = 1092
+  ClientHeight = 565
+  ClientWidth = 1190
   ExplicitLeft = 3
   ExplicitTop = 3
-  ExplicitWidth = 1104
-  ExplicitHeight = 391
   TextHeight = 15
   object Label1: TLabel [0]
     Left = 167
@@ -93,15 +91,73 @@ inherited FrmCadastoVeiculo: TFrmCadastoVeiculo
     ParentFont = False
   end
   inherited tlbCadastroCRUD: TToolBar
-    Top = 292
-    Width = 1092
+    Top = 504
+    Width = 1190
+    inherited btnNovo: TToolButton
+      ExplicitWidth = 55
+      ExplicitHeight = 54
+    end
+    inherited ToolButton1: TToolButton
+      Left = 55
+      ExplicitLeft = 55
+      ExplicitHeight = 54
+    end
+    inherited btnPesquisar: TToolButton
+      Left = 63
+      ExplicitLeft = 63
+      ExplicitWidth = 55
+      ExplicitHeight = 54
+    end
+    inherited ToolButton3: TToolButton
+      Left = 118
+      ExplicitLeft = 118
+      ExplicitHeight = 54
+    end
+    inherited btnGravar: TToolButton
+      Left = 126
+      ExplicitLeft = 126
+      ExplicitWidth = 55
+      ExplicitHeight = 54
+    end
+    inherited ToolButton2: TToolButton
+      Left = 181
+      ExplicitLeft = 181
+      ExplicitHeight = 54
+    end
+    inherited ToolButton4: TToolButton
+      Left = 262
+      ExplicitLeft = 262
+      ExplicitHeight = 54
+    end
+    inherited btnExcluir: TToolButton
+      Left = 270
+      ExplicitLeft = 270
+      ExplicitWidth = 55
+      ExplicitHeight = 54
+    end
+    inherited ToolButton6: TToolButton
+      Left = 325
+      ExplicitLeft = 325
+      ExplicitHeight = 54
+    end
+    inherited btnCancelar: TToolButton
+      Left = 333
+      ExplicitLeft = 333
+      ExplicitWidth = 55
+      ExplicitHeight = 54
+    end
     inherited ToolButton5: TToolButton
+      Left = 388
       Width = 456
+      ExplicitLeft = 388
       ExplicitWidth = 456
+      ExplicitHeight = 54
     end
     inherited btnSair: TToolButton
-      Left = 1009
-      ExplicitLeft = 1009
+      Left = 844
+      ExplicitLeft = 844
+      ExplicitWidth = 55
+      ExplicitHeight = 54
     end
   end
   object dbeCodigo: TDBEdit [7]
@@ -139,6 +195,7 @@ inherited FrmCadastoVeiculo: TFrmCadastoVeiculo
     Top = 128
     Width = 115
     Height = 36
+    Color = clBtnShadow
     DataField = 'mod_cod'
     DataSource = dtsPrincipal
     Font.Charset = DEFAULT_CHARSET
@@ -147,6 +204,7 @@ inherited FrmCadastoVeiculo: TFrmCadastoVeiculo
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 3
   end
   object dbeCodTipo: TDBEdit [10]

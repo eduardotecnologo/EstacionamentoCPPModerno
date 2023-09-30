@@ -35,7 +35,10 @@ void __fastcall TdtmEstacionamento::CleanModelVeiculo()
 {
    if (qryVeiculomon_cod->NewValue != qryVeiculomon_cod->OldValue)
    {
-	  qryVeiculomon_cod->AsVariant = Null();	
+	  if(qryVeiculo->State == dsEdit || qryVeiculo->State == dsInsert)
+	  {
+		qryVeiculomod_cod->AsVariant = Null();
+	  }	                                                    
    }  
 }
 //---------------------------------------------------------------------------
