@@ -2,7 +2,7 @@ object FrmPrincipal: TFrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Sistema de Controlde de Ticket de Estacionamento'
-  ClientHeight = 773
+  ClientHeight = 768
   ClientWidth = 1374
   Color = clSilver
   Font.Charset = DEFAULT_CHARSET
