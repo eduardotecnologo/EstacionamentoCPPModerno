@@ -7142,7 +7142,7 @@ object FrmPrincipal: TFrmPrincipal
   end
   object mnmPrincipal: TMainMenu
     Left = 32
-    Top = 32
+    Top = 80
     object Cadastro1: TMenuItem
       Caption = 'Cadastro'
       object Condutor1: TMenuItem

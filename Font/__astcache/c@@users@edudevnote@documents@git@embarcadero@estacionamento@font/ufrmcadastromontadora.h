@@ -28,6 +28,7 @@ __published:	// IDE-managed Components
 	TLabel *Label2;
 	TDBEdit *DBEditNome;
 	TToolButton *ToolButton7;
+	TLabel *Label3;
 
 private:	// User declarations
 public:		// User declarations

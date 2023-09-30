@@ -16,10 +16,21 @@
 #include <System.Actions.hpp>
 #include <Vcl.ActnList.hpp>
 #include <Vcl.DBActns.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Mask.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastoCondutor : public TFrmModelocadastroCRUD
 {
 __published:	// IDE-managed Components
+	TLabel *Label1;
+	TDBEdit *dbEditCodigo;
+	TLabel *Label2;
+	TDBEdit *dbEditNome;
+	TLabel *Label3;
+	TDBEdit *dbEditCNH;
+	TLabel *Label4;
+	TDBEdit *dbEditCPF;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastoCondutor(TComponent* Owner);

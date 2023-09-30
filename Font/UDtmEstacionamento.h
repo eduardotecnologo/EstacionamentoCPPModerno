@@ -34,9 +34,31 @@ __published:	// IDE-managed Components
 	TFDGUIxWaitCursor *WaitCursor;
 	TIntegerField *qryMontadoramon_cod;
 	TStringField *qryMontadoramon_nom;
+	TFDQuery *qryTipo;
+	TIntegerField *qryTipotip_cod;
+	TStringField *qryTipotip_des;
+	TFDQuery *qryCondutor;
+	TIntegerField *qryCondutorcon_cod;
+	TStringField *qryCondutorcon_nom;
+	TStringField *qryCondutorcon_cnh;
+	TStringField *qryCondutorcon_cpf;
+	TFDQuery *qryModelo;
+	TIntegerField *qryModelomod_cod;
+	TIntegerField *qryModelomon_cod;
+	TStringField *qryModelomod_nom;
+	TFDQuery *qryVeiculo;
+	TIntegerField *qryVeiculovei_cod;
+	TIntegerField *qryVeiculomon_cod;
+	TIntegerField *qryVeiculomod_cod;
+	TIntegerField *qryVeiculotip_cod;
+	TStringField *qryVeiculovei_pla;
+	TIntegerField *qryVeiculovei_ano_fab;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);
+	void __fastcall ConfigLookUp(TFDQuery* AQuery);
+	void __fastcall UpdateLookUp(TFDQuery* AQuery);
+    void __fastcall CleanModelVeiculo();
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TdtmEstacionamento *dtmEstacionamento;

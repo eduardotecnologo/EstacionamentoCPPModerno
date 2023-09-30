@@ -1,6 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include <Vcl.Themes.hpp>
 #pragma hdrstop
 
 #include "UFrmPrincipal.h"
@@ -58,7 +59,8 @@ void __fastcall TFrmPrincipal::EvAbrirCadastroTipoClick(TObject *Sender)
 
 void __fastcall TFrmPrincipal::EvAbrirCadastroTicketClick(TObject *Sender)
 {
-    new TFrmCadastroTicket(this);
+	new TFrmCadastroTicket(this);
 }
 //---------------------------------------------------------------------------
+
 

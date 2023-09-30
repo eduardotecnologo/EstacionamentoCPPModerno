@@ -67,6 +67,7 @@
         <VerInfo_Locale>1046</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <SanitizedProjectName>Estacionamento</SanitizedProjectName>
+        <Custom_Styles>&quot;Tablet Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\TabletDark.vsf&quot;;&quot;Windows10 Dark|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Windows10Dark.vsf&quot;;Carbon|VCLSTYLE|$(BDSCOMMONDIR)\Styles\Carbon.vsf</Custom_Styles>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <PackageImports>adortl;appanalytics;bcbie;bcbsmp;bindcomp;bindcompdbx;bindcompfmx;bindcompvcl;bindcompvclsmp;bindcompvclwinx;bindengine;CloudService;CustomIPTransport;dbexpress;dbrtl;dbxcds;DbxClientDriver;DbxCommonDriver;DBXInterBaseDriver;DBXMySQLDriver;DBXSqliteDriver;dsnap;dsnapcon;dsnapxml;FireDAC;FireDACADSDriver;FireDACCommon;FireDACCommonDriver;FireDACCommonODBC;FireDACIBDriver;FireDACMSAccDriver;FireDACMySQLDriver;FireDACPgDriver;FireDACSqliteDriver;fmx;fmxase;fmxdae;fmxFireDAC;fmxobj;FMXTee;FmxTeeUI;ibmonitor;ibxbindings;ibxpress;IndyCore;IndyIPClient;IndyIPCommon;IndyIPServer;IndyProtocols;IndySystem;inet;inetdb;inetdbxpress;RESTBackendComponents;RESTComponents;rtl;soapmidas;soaprtl;soapserver;Tee;TeeDB;TeeUI;tethering;vcl;vclactnband;vcldb;vcldsnap;vcledge;vclFireDAC;vclib;vclie;vclimg;VCLRESTComponents;VclSmp;vcltouch;vclwinx;vclx;xmlrtl;$(PackageImports)</PackageImports>
@@ -190,10 +191,10 @@
         <FormResources Include="UFrmCadastroVeiculo.dfm"/>
         <FormResources Include="UFrmModelocadastroCRUD.dfm"/>
         <FormResources Include="UFrmPrincipal.dfm"/>
-        <FormResources Include="UFrmCadastroCondutor.dfm"/>
-        <FormResources Include="UFrmCadastroModelo.dfm"/>
         <FormResources Include="UFrmCadastroMontadora.dfm"/>
         <FormResources Include="UDtmEstacionamento.dfm"/>
+        <FormResources Include="UFrmCadastroCondutor.dfm"/>
+        <FormResources Include="UFrmCadastroModelo.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

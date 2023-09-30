@@ -1,7 +1,10 @@
 .vscode
+.gitignore
 Temp
+*.exe
 *.cbproj
 *.cbproj.local
+Executavel
 Font/__recovery
 Font/__history
 Font/__astcache
