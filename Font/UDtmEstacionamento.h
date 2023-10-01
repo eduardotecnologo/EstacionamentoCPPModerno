@@ -70,7 +70,8 @@ public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);
 	void __fastcall ConfigLookUp(TFDQuery* AQuery);
 	void __fastcall UpdateLookUp(TFDQuery* AQuery);
-    void __fastcall CleanModelVeiculo();
+	void __fastcall CleanModelVeiculo();
+    void __fastcall RecordDriving();
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TdtmEstacionamento *dtmEstacionamento;

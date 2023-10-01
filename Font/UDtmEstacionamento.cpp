@@ -38,7 +38,14 @@ void __fastcall TdtmEstacionamento::CleanModelVeiculo()
 	  if(qryVeiculo->State == dsEdit || qryVeiculo->State == dsInsert)
 	  {
 		qryVeiculomod_cod->AsVariant = Null();
-	  }	                                                    
-   }  
+	  }
+   }
 }
 //---------------------------------------------------------------------------
+void __fastcall TdtmEstacionamento::RecordDriving()
+{
+	if(qryConducao->State == dsInsert || qryConducao->State == dsEdit)
+	{
+      qryConducao->Post();
+	}
+}
