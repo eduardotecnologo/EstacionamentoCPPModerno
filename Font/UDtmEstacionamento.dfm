@@ -21,9 +21,17 @@ object dtmEstacionamento: TdtmEstacionamento
     Connection = EstacionamentoConnection
     SQL.Strings = (
       'SELECT MON_COD, MON_NOM '
-      '       FROM MONTADORA ')
+      '       FROM MONTADORA'
+      '       WHERE MON_COD = :CODIGO; ')
     Left = 273
     Top = 16
+    ParamData = <
+      item
+        Name = 'CODIGO'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
     object qryMontadoramon_cod: TIntegerField
       DisplayLabel = 'C'#243'digo'
       FieldName = 'mon_cod'
@@ -227,6 +235,7 @@ object dtmEstacionamento: TdtmEstacionamento
   end
   object qryTicket: TFDQuery
     Active = True
+    OnNewRecord = EvAddDateHourCurrentOnNewRecord
     MasterSource = dtsConducaoTicketMD
     MasterFields = 'cnd_cod'
     DetailFields = 'cnd_cod'
@@ -272,7 +281,8 @@ object dtmEstacionamento: TdtmEstacionamento
       FieldName = 'tic_dat'
       Origin = 'tic_dat'
       ProviderFlags = [pfInUpdate]
-      EditMask = '!99/99/0000;1;_'
+      DisplayFormat = 'dd/mm/yyyy'
+      EditMask = '!99/99/00;1;_'
     end
     object qryTickettic_hor_ent: TSQLTimeStampField
       DisplayLabel = 'Hora Entrada'
@@ -280,7 +290,8 @@ object dtmEstacionamento: TdtmEstacionamento
       FieldName = 'tic_hor_ent'
       Origin = 'tic_hor_ent'
       ProviderFlags = [pfInUpdate]
-      EditMask = '00:00;1;_'
+      DisplayFormat = 'hh:mm:ss'
+      EditMask = '00:00:00;1;_'
     end
     object qryTickettic_hor_sai: TSQLTimeStampField
       DisplayLabel = 'Hora Sa'#237'da'
@@ -288,7 +299,8 @@ object dtmEstacionamento: TdtmEstacionamento
       FieldName = 'tic_hor_sai'
       Origin = 'tic_hor_sai'
       ProviderFlags = [pfInUpdate]
-      EditMask = '00:00;1;_'
+      DisplayFormat = 'hh:mm:ss'
+      EditMask = '00:00:00;1;_'
     end
     object qryTickettic_val_pag: TBCDField
       DisplayLabel = 'Valor Pago'

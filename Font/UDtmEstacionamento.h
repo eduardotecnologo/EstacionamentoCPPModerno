@@ -65,12 +65,17 @@ __published:	// IDE-managed Components
 	TSQLTimeStampField *qryTickettic_hor_sai;
 	TBCDField *qryTickettic_val_pag;
 	TDataSource *dtsConducaoTicketMD;
+	void __fastcall EvAddDateHourCurrentOnNewRecord(TDataSet *DataSet);
 private:	// User declarations
+	bool __fastcall Search(TFDQuery *AQuery, UnicodeString ANomePK, int AValueSearch);
 public:		// User declarations
 	__fastcall TdtmEstacionamento(TComponent* Owner);
 	void __fastcall ConfigLookUp(TFDQuery* AQuery);
 	void __fastcall UpdateLookUp(TFDQuery* AQuery);
-    void __fastcall CleanModelVeiculo();
+	void __fastcall CleanModelVeiculo();
+	void __fastcall RecordDriving();
+	void __fastcall AddHourOutTicket();
+    bool __fastcall SearchAutomaker(int AValuePK);
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TdtmEstacionamento *dtmEstacionamento;

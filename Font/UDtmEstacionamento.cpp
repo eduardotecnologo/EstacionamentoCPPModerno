@@ -38,7 +38,61 @@ void __fastcall TdtmEstacionamento::CleanModelVeiculo()
 	  if(qryVeiculo->State == dsEdit || qryVeiculo->State == dsInsert)
 	  {
 		qryVeiculomod_cod->AsVariant = Null();
-	  }	                                                    
-   }  
+	  }
+   }
 }
 //---------------------------------------------------------------------------
+void __fastcall TdtmEstacionamento::RecordDriving()
+{
+	if(qryConducao->State == dsInsert || qryConducao->State == dsEdit)
+	{
+      qryConducao->Post();
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TdtmEstacionamento::EvAddDateHourCurrentOnNewRecord(TDataSet *DataSet)
+{
+	qryTickettic_dat->AsDateTime = Date();
+	qryTickettic_hor_ent->AsDateTime = Now();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TdtmEstacionamento::AddHourOutTicket()
+{
+	qryTicket->Edit();
+	qryTickettic_hor_sai->AsDateTime = Now();
+}
+
+//---------------------------------------------------------------------------
+bool __fastcall TdtmEstacionamento::Search(TFDQuery *AQuery, UnicodeString ANomePK, int AValueSearch)
+{
+
+	bool result = false;
+	if(AQuery)
+	{
+	  try
+	  {
+		 AQuery->DisableControls();
+		 AQuery->Close();
+		 AQuery->ParamByName(ANomePK)->AsInteger = AValueSearch;
+		 AQuery->Open();
+		 result = !AQuery->IsEmpty();
+	  }
+	  __finally
+	  {
+		 AQuery->EnableControls();
+		 //return result;
+	  }
+	   return result;
+	}
+
+}
+
+//---------------------------------------------------------------------------
+ bool __fastcall TdtmEstacionamento::SearchAutomaker(int AValuePK)
+ {
+	return  Search(qryMontadora, "CODIGO", AValuePK);
+ }
+
+ //---------------------------------------------------------------------------

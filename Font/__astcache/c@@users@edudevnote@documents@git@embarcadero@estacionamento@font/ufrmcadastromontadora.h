@@ -29,6 +29,7 @@ __published:	// IDE-managed Components
 	TDBEdit *DBEditNome;
 	TToolButton *ToolButton7;
 	TLabel *Label3;
+	void __fastcall EvSearchMontadora(TObject *Sender);
 
 private:	// User declarations
 public:		// User declarations

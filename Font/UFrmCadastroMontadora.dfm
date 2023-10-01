@@ -1,13 +1,15 @@
 inherited FrmCadastoMontadora: TFrmCadastoMontadora
   Caption = 'Cadastro de Montadora'
-  ClientHeight = 318
+  ClientHeight = 269
   ClientWidth = 1068
+  ExplicitLeft = 3
+  ExplicitTop = 3
   ExplicitWidth = 1080
-  ExplicitHeight = 356
+  ExplicitHeight = 307
   TextHeight = 15
   object Label1: TLabel [0]
-    Left = 32
-    Top = 99
+    Left = 40
+    Top = 51
     Width = 65
     Height = 28
     Caption = '&C'#243'digo'
@@ -20,8 +22,8 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     ParentFont = False
   end
   object Label2: TLabel [1]
-    Left = 42
-    Top = 160
+    Left = 50
+    Top = 112
     Width = 54
     Height = 28
     Caption = '&Nome'
@@ -47,7 +49,7 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     ParentFont = False
   end
   inherited tlbCadastroCRUD: TToolBar
-    Top = 257
+    Top = 208
     Width = 1068
     TabOrder = 2
     ExplicitTop = 248
@@ -70,9 +72,9 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     end
   end
   object DBEditCodigo: TDBEdit [4]
-    Left = 114
-    Top = 96
-    Width = 231
+    Left = 122
+    Top = 48
+    Width = 158
     Height = 36
     DataField = 'mon_cod'
     DataSource = dtsPrincipal
@@ -83,10 +85,11 @@ inherited FrmCadastoMontadora: TFrmCadastoMontadora
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+    OnExit = EvSearchMontadora
   end
   object DBEditNome: TDBEdit [5]
-    Left = 114
-    Top = 157
+    Left = 122
+    Top = 109
     Width = 479
     Height = 36
     DataField = 'mon_nom'
