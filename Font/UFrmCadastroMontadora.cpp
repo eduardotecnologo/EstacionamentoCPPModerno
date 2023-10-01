@@ -16,3 +16,9 @@ __fastcall TFrmCadastoMontadora::TFrmCadastoMontadora(TComponent* Owner)
 {
 }
 
+void __fastcall TFrmCadastoMontadora::EvSearchMontadora(TObject *Sender)
+{
+    ShowMessage("ookkokkko");
+}
+//---------------------------------------------------------------------------
+

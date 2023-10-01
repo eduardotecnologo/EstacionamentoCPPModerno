@@ -64,3 +64,35 @@ void __fastcall TdtmEstacionamento::AddHourOutTicket()
 	qryTickettic_hor_sai->AsDateTime = Now();
 }
 
+//---------------------------------------------------------------------------
+bool __fastcall TdtmEstacionamento::Search(TFDQuery *AQuery, UnicodeString ANomePK, int AValueSearch)
+{
+
+	bool result = false;
+	if(AQuery)
+	{
+	  try
+	  {
+		 AQuery->DisableControls();
+		 AQuery->Close();
+		 AQuery->ParamByName(ANomePK)->AsInteger = AValueSearch;
+		 AQuery->Open();
+		 result = !AQuery->IsEmpty();
+	  }
+	  __finally
+	  {
+		 AQuery->EnableControls();
+		 //return result;
+	  }
+	   return result;
+	}
+
+}
+
+//---------------------------------------------------------------------------
+ bool __fastcall TdtmEstacionamento::SearchAutomaker(int AValuePK)
+ {
+	return  Search(qryMontadora, "CODIGO", AValuePK);
+ }
+
+ //---------------------------------------------------------------------------
