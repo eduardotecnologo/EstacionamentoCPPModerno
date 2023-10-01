@@ -33,6 +33,7 @@
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Mask.hpp>
 #include <Vcl.Menus.hpp>
+#include <Vcl.Buttons.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroTicket : public TFrmModelocadastroCRUD
 {
@@ -57,9 +58,11 @@ __published:	// IDE-managed Components
 	TMenuItem *AtualizeCondutor1;
 	TPopupMenu *ppmVeiculo;
 	TMenuItem *AtualizeVeiculo1;
+	TBitBtn *btnHoraSaida;
 	void __fastcall EvUpdateCondutorLK(TObject *Sender);
 	void __fastcall EvUpdateVeiculoLK(TObject *Sender);
 	void __fastcall EvRecordDriving(TObject *Sender);
+	void __fastcall EvAddHourCurrentClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroTicket(TComponent* Owner);

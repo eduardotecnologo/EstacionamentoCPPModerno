@@ -2,6 +2,8 @@ inherited FrmCadastroTicket: TFrmCadastroTicket
   Caption = 'Cadastro de Ticket'
   ClientHeight = 706
   ClientWidth = 1060
+  ExplicitLeft = 3
+  ExplicitTop = 3
   ExplicitWidth = 1072
   ExplicitHeight = 744
   TextHeight = 15
@@ -21,7 +23,7 @@ inherited FrmCadastroTicket: TFrmCadastroTicket
     end
   end
   object grbConducao: TGroupBox [1]
-    Left = 8
+    Left = 16
     Top = 16
     Width = 961
     Height = 241
@@ -110,6 +112,19 @@ inherited FrmCadastroTicket: TFrmCadastroTicket
       PopupMenu = ppmVeiculo
       TabOrder = 4
     end
+    object btnHoraSaida: TBitBtn
+      Left = 784
+      Top = 184
+      Width = 166
+      Height = 49
+      Hint = 'Adiciona a hora corrente de sa'#237'da'
+      HelpType = htKeyword
+      Caption = '&Hora de Sa'#237'da'
+      Kind = bkRetry
+      NumGlyphs = 2
+      TabOrder = 5
+      OnClick = EvAddHourCurrentClick
+    end
   end
   object grbTicket: TGroupBox [2]
     Left = 8
@@ -152,6 +167,7 @@ inherited FrmCadastroTicket: TFrmCadastroTicket
         item
           Expanded = False
           FieldName = 'tic_dat'
+          Width = 155
           Visible = True
         end
         item

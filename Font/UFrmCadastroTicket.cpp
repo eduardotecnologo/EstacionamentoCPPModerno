@@ -38,3 +38,9 @@ void __fastcall TFrmCadastroTicket::EvRecordDriving(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TFrmCadastroTicket::EvAddHourCurrentClick(TObject *Sender)
+{
+	 dtmEstacionamento->AddHourOutTicket();
+}
+//---------------------------------------------------------------------------
+

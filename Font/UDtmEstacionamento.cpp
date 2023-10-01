@@ -49,3 +49,18 @@ void __fastcall TdtmEstacionamento::RecordDriving()
       qryConducao->Post();
 	}
 }
+//---------------------------------------------------------------------------
+
+void __fastcall TdtmEstacionamento::EvAddDateHourCurrentOnNewRecord(TDataSet *DataSet)
+{
+	qryTickettic_dat->AsDateTime = Date();
+	qryTickettic_hor_ent->AsDateTime = Now();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TdtmEstacionamento::AddHourOutTicket()
+{
+	qryTicket->Edit();
+	qryTickettic_hor_sai->AsDateTime = Now();
+}
+
